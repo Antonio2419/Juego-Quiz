@@ -1,0 +1,300 @@
+/* SECCION MUNU */
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@700;800&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap");
+.menu {
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.menu h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.categorias {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 180px 180px;
+  gap: 60px;
+  justify-content: space-evenly;
+}
+
+.categoria {
+  background: #18528b;
+  height: 70px;
+  border-radius: 15px;
+  color: #fff;
+  display: flex;
+  align-items: end;
+  padding: 20px;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.categoria .foto-categoria {
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -32px;
+  transition: 0.3s;
+}
+
+.categoria:hover {
+  box-shadow: 0 0 15px #3ab7ff;
+}
+
+.categoria:hover .foto-categoria {
+  scale: 1.2;
+}
+
+.juego {
+  color: #fff;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.juego .pregunta {
+  margin: 10px 0 30px 0;
+  font-size: 20px;
+}
+
+.juego .opcion {
+  display: block;
+  width: 90%;
+  margin: auto;
+  border: 0;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/*se aplican de forma dinamica*/
+.correcta {
+  background: rgb(56, 192, 255);
+}
+
+.incorrecta {
+  background: rgb(255, 56, 56);
+}
+
+/*animacion para los puntos*/
+.efecto {
+  animation: 1s zoom;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+    color: #fff;
+  }
+  40% {
+    transform: scale(1.3);
+    color: #ffe43a;
+  }
+  60% {
+    transform: scale(1.3);
+    color: #ffe43a;
+  }
+  100% {
+    transform: scale(1);
+    color: #fff;
+    font-weight: normal;
+  }
+}
+/* CLASES ADICIONALES */
+/*ESTAS sirven para desabilitar los clips en los 
+botones del mennu principal, cuando haya compltado 
+las preguntas */
+.no-events {
+  pointer-events: none;
+}
+
+/* esta pondra de color gris la opcion no elegida del menu. */
+.desabilitada {
+  filter: grayscale(0.9) opacity(0.7);
+}
+
+.final {
+  margin-top: 20px;
+  text-align: center;
+  color: #ebe5e5;
+}
+
+.final .medalla {
+  position: relative;
+  width: 180px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.final .medalla .nombre {
+  position: absolute;
+  top: 55px;
+  left: 55%;
+  transform: translateX(-10%);
+  font-size: 32px;
+}
+
+.final img {
+  display: block;
+  width: 250px;
+}
+
+.final .puntaje-final {
+  font-size: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(#18528b, #172f5e, #1e406b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+
+.container {
+  width: 500px;
+  background: linear-gradient(#18528b, #314368);
+  box-shadow: 0 5px 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  height: 80%;
+  padding: 20px;
+  position: relative;
+}
+
+.container .img {
+  width: 140px;
+  position: absolute;
+  display: flex;
+  top: -90px;
+  right: -60px;
+  z-index: 1;
+}
+
+.container h4 {
+  font-size: 22px;
+  color: #0a8bf5;
+  font-weight: 900;
+}
+
+header {
+  background-color: linear-gradient(#18528b, #314368);
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 3px 3px 5px #2a2929;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inicio {
+  text-align: center;
+  padding-top: 80px;
+  color: #fff;
+  font-size: 32px;
+}
+
+.inicio p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.inicio input {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  font-size: 22px;
+  font-weight: 900;
+  padding: 10px;
+  border-radius: 50px;
+  border: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn {
+  background: #1e406b;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn {
+  background: #1e406b;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #011227;
+}
+
+.puntaje, .jugador {
+  display: flex;
+  align-items: center;
+}
+
+.puntaje img, .jugador img {
+  width: 40px;
+  background: #c7c9ca;
+  border-radius: 50%;
+  border: 3px solid #0a8bf5;
+  z-index: 2;
+}
+
+.puntaje .puntos {
+  background: rgba(11, 130, 209, 0.768627451);
+  width: 90px;
+  display: block;
+  padding: 5px;
+  border-radius: 0 30px 30px 0;
+  border: 2px solid #0a8bf5;
+  margin-left: -8px;
+  z-index: 0;
+  font-size: 16px;
+}
+
+.jugador .nombre {
+  background: rgba(11, 130, 209, 0.768627451);
+  width: 90px;
+  display: block;
+  padding: 5px;
+  border-radius: 30px 0 0 30px;
+  border: 2px solid #0a8bf5;
+  margin-right: -8px;
+  z-index: 0;
+  font-size: 16px;
+}

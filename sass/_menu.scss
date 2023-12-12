@@ -1,0 +1,46 @@
+/* SECCION MUNU */
+
+.menu{
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+  }
+.menu h2{
+  font-size: 35px;
+  font-weight: bold;
+}
+  .categorias{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 180px 180px;
+    gap: 60px;
+    justify-content: space-evenly;
+  }
+  .categoria{
+    background: #18528b;
+    height: 70px;
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+
+  }
+  .categoria .foto-categoria{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -32px;
+    transition: .3s;
+  }
+  .categoria:hover{
+    box-shadow: 0 0 15px #3ab7ff;
+  }
+  .categoria:hover .foto-categoria{
+    scale: 1.2;
+  }

@@ -1,0 +1,26 @@
+.final{
+    margin-top: 20px;
+    text-align: center;
+    color: #ebe5e5;
+}
+.final .medalla{
+   position: relative;
+   width: 180px;
+   margin-left: 100px;
+   margin-top: 10px;
+}
+
+.final .medalla .nombre{
+    position: absolute;
+    top: 55px;
+    left: 55%;
+    transform: translateX(-10%);
+    font-size: 32px;
+}
+.final img {
+    display: block;
+    width: 250px;
+}
+.final .puntaje-final{
+    font-size: 50px;
+}

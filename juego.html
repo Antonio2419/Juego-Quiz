@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cubo3d</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/imagen/logo.png" alt="" class="img">
+        <header>
+            <div class="puntaje">
+                <img src="/imagen/puntos.png" alt="">
+                <span class="puntos" id="puntos"> 0 </span>
+            </div>
+            <h4>Juego Quiz</h4>
+            <div class="jugador">
+                <span class="nombre" id="nombre"> - </span>
+                <img src="/imagen/user (2).png" alt="">
+            </div>
+        </header>
+                <!-- PANTALLA DE PREGUNTAS -->
+        <main class="juego">
+            <div class="contador-pregunta">
+                <span class="num-pregunta" id="num-pregunta">1</span>/
+                <span>10</span>
+            </div>
+            <p class="pregunta" id="txt-pregunta">
+                ¿Texto de la pregunta 1?
+            </p>
+            <div class="opciones" id="opciones">
+                <button class="opcion" id="a">OPCION A</button>
+                <button class="opcion" id="b">OPCION B</button>
+                <button class="opcion" id="c">OPCION C</button>
+                <button class="opcion" id="d">OPCION D</button>
+            </div>
+           <button class="btn" id="siguiente">Siguiente</button>
+            
+        </main>
+    </div>
+    <script src="./js/juego.jsx"></script>
+</body>
+</html>
